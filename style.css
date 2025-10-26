@@ -1,0 +1,243 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f4f4f4;
+  margin: 0;
+}
+
+header {
+  background: #0078d7;
+  color: white;
+  padding: 20px;
+}
+
+.hotel-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+
+.hotel {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  width: 250px;
+  transition: transform 0.2s;
+}
+
+.hotel:hover {
+  transform: scale(1.03);
+}
+
+.hotel img {
+  border-radius: 10px;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+button {
+  background: #0078d7;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #005fa3;
+}
+
+.hidden {
+  display: none;
+}
+
+#roomSection {
+  margin: 40px auto;
+  width: 80%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.room {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  text-align: left;
+}
+
+.back {
+  margin-top: 20px;
+  background: gray;
+}
+
+
+
+/* ---------- LOGIN PAGE STYLE ---------- */
+.login-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(120deg, #0078d7, #00b4d8);
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 300px;
+}
+
+.login-container h2 {
+  margin-bottom: 10px;
+  color: #0078d7;
+}
+
+.login-container input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background: #0078d7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background: #005fa3;
+}
+
+#loginMessage {
+  margin-top: 10px;
+  color: red;
+  font-weight: bold;
+}
+
+
+
+/* ---------- NAVBAR & ABOUT PAGE ---------- */
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+.about-section {
+  background: white;
+  margin: 40px auto;
+  padding: 30px;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.about-section h2 {
+  color: #0078d7;
+  text-align: center;
+}
+
+.about-section ul {
+  list-style-type: "⭐ ";
+  padding-left: 20px;
+}
+
+footer {
+  margin-top: 40px;
+  background: #0078d7;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+/* ---------- CONTACT PAGE ---------- */
+.contact-section {
+  background: white;
+  margin: 40px auto;
+  padding: 30px;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  text-align: center;
+}
+
+.contact-section h2 {
+  color: #0078d7;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: 80%;
+  max-width: 500px;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+}
+
+.contact-section button {
+  background: #0078d7;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-section button:hover {
+  background: #005fa3;
+}
+
+#contactMessage {
+  margin-top: 15px;
+  font-weight: bold;
+}

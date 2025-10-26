@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Reservation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🏨 EasyStay Hotels</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+    </nav>
+
+  </header>
+
+  <section class="hotel-list" id="hotelList">
+  <div class="hotel">
+    <img src="images/hotel1.jpg" alt="Sunrise Hotel" />
+    <h3>Sunrise Hotel</h3>
+    <p>Price: $120 / night</p>
+    <button onclick="showRooms('Sunrise Hotel')">Reserve</button>
+  </div>
+
+  <div class="hotel">
+    <img src="images/hotel2.jpg" alt="Blue Ocean Resort" />
+    <h3>Blue Ocean Resort</h3>
+    <p>Price: $150 / night</p>
+    <button onclick="showRooms('Blue Ocean Resort')">Reserve</button>
+  </div>
+
+  <div class="hotel">
+    <img src="images/hotel3.jpg" alt="Mountain View Lodge" />
+    <h3>Mountain View Lodge</h3>
+    <p>Price: $90 / night</p>
+    <button onclick="showRooms('Mountain View Lodge')">Reserve</button>
+  </div>
+
+  <div class="hotel">
+    <img src="images/hotel4.jpg" alt="City Lights Inn" />
+    <h3>City Lights Inn</h3>
+    <p>Price: $130 / night</p>
+    <button onclick="showRooms('City Lights Inn')">Reserve</button>
+  </div>
+
+  <div class="hotel">
+    <img src="images/hotel5.jpg" alt="Palm Paradise" />
+    <h3>Palm Paradise</h3>
+    <p>Price: $180 / night</p>
+    <button onclick="showRooms('Palm Paradise')">Reserve</button>
+  </div>
+
+  <div class="hotel">
+    <img src="images/hotel6.jpg" alt="Golden Sand Suites" />
+    <h3>Golden Sand Suites</h3>
+    <p>Price: $110 / night</p>
+    <button onclick="showRooms('Golden Sand Suites')">Reserve</button>
+  </div>
+
+  <div class="hotel">
+    <img src="images/hotel7.jpg" alt="Lakeside Retreat" />
+    <h3>Lakeside Retreat</h3>
+    <p>Price: $140 / night</p>
+    <button onclick="showRooms('Lakeside Retreat')">Reserve</button>
+  </div>
+
+  <div class="hotel">
+    <img src="images/hotel8.jpg" alt="Royal Garden Hotel" />
+    <h3>Royal Garden Hotel</h3>
+    <p>Price: $200 / night</p>
+    <button onclick="showRooms('Royal Garden Hotel')">Reserve</button>
+  </div>
+
+  <div class="hotel">
+    <img src="images/hotel9.jpg" alt="Forest Breeze Inn" />
+    <h3>Forest Breeze Inn</h3>
+    <p>Price: $100 / night</p>
+    <button onclick="showRooms('Forest Breeze Inn')">Reserve</button>
+  </div>
+
+  <div class="hotel">
+    <img src="images/hotel10.jpg" alt="Desert Pearl Resort" />
+    <h3>Desert Pearl Resort</h3>
+    <p>Price: $160 / night</p>
+    <button onclick="showRooms('Desert Pearl Resort')">Reserve</button>
+  </div>
+
+  <div class="hotel">
+    <img src="images/hotel11.jpg" alt="Coral Reef Hotel" />
+    <h3>Coral Reef Hotel</h3>
+    <p>Price: $175 / night</p>
+    <button onclick="showRooms('Coral Reef Hotel')">Reserve</button>
+  </div>
+
+  <div class="hotel">
+    <img src="images/hotel12.jpg" alt="Skyline View Tower" />
+    <h3>Skyline View Tower</h3>
+    <p>Price: $190 / night</p>
+    <button onclick="showRooms('Skyline View Tower')">Reserve</button>
+  </div>
+</section>
+
+
+  <section id="roomSection" class="hidden">
+    <h2 id="selectedHotel"></h2>
+    <div id="roomList"></div>
+    <button class="back" onclick="goBack()">⬅ Back to Hotels</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - EasyStay Hotels</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🏨 EasyStay Hotels</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <p>
+      Have a question, comment, or request?  
+      Our team would love to hear from you. Fill out the form below and we’ll get back to you as soon as possible.
+    </p>
+
+    <form id="contactForm" onsubmit="return sendMessage(event)">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" rows="5" placeholder="Your Message..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p id="contactMessage"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 EasyStay Hotels | Made with 💙 for travelers</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
