@@ -241,3 +241,66 @@ footer {
   margin-top: 15px;
   font-weight: bold;
 }
+
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+/* For tablets and medium screens */
+@media (max-width: 1024px) {
+  .hotel-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hotel {
+    width: 100%;
+  }
+
+  .about-section,
+  .contact-section,
+  #roomSection {
+    width: 90%;
+  }
+}
+
+/* For phones */
+@media (max-width: 600px) {
+  header {
+    padding: 15px;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .hotel-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .hotel {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .hotel img {
+    height: 180px;
+  }
+
+  .about-section,
+  .contact-section,
+  #roomSection {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .login-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
