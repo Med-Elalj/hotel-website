@@ -12,15 +12,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-
-      - name : test
-        run: |
-          echo "Deploying with API key: ${{ secrets.FTP_USERNAME }}"
           
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ftpupload.net
-          username: if0_40243372
-          password: D3eRBK3CYxS6D0
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
           server-dir: /htdocs/
