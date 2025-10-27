@@ -11,16 +11,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-      
-      - name: Debug secrets visibility
-        run: |
-          echo "Username exists: ${{ secrets.FTP_USERNAME != '' }}"
-          echo "Password exists: ${{ secrets.FTP_PASSWORD != '' }}"
           
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ftpupload.net
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          username: if0_40243372
+          password: D3eRBK3CYxS6D0
           server-dir: /htdocs/
